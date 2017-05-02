@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F659BE49-9619-4F0E-9C7F-746BB928B25F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>soporte</RootNamespace>
+    <AssemblyName>soporte</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\..\..\Npgsql2.0.11-bin-ms.net\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.0.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.0.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\..\..\..\..\Npgsql2.0.11-bin-ms.net\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.0.Npgsql">
+      <HintPath>..\..\..\..\..\..\..\Npgsql2.0.11-bin-ms.net\policy.2.0.Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="sharpPDF">
+      <HintPath>..\..\..\..\soporte\soporte\bin\sharpPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.css" />
+    <Content Include="Asignar\Default.aspx" />
+    <Content Include="Asignar\insert.aspx" />
+    <Content Include="Cartuchos\Default.aspx" />
+    <Content Include="conector\loading.html" />
+    <Content Include="Consultas\Cambio.aspx" />
+    <Content Include="Consultas\Desincorpora.aspx" />
+    <Content Include="Consultas\EnRevision.aspx" />
+    <Content Include="Consultas\frmconsulta1.aspx" />
+    <Content Include="Consultas\frmconsulta10.aspx" />
+    <Content Include="Consultas\frmconsulta11.aspx" />
+    <Content Include="Consultas\frmconsulta12.aspx" />
+    <Content Include="Consultas\frmconsulta13.aspx" />
+    <Content Include="Consultas\frmconsulta2.aspx" />
+    <Content Include="Consultas\frmconsulta3.aspx" />
+    <Content Include="Consultas\frmconsulta4.aspx" />
+    <Content Include="Consultas\frmconsulta5.aspx" />
+    <Content Include="Consultas\frmconsulta6.aspx" />
+    <Content Include="Consultas\frmconsulta7.aspx" />
+    <Content Include="Consultas\frmconsulta8.aspx" />
+    <Content Include="Consultas\frmconsulta9.aspx" />
+    <Content Include="Consultas\frmCPU.aspx" />
+    <Content Include="Consultas\frmEditaEquipos.aspx" />
+    <Content Include="Consultas\frmEditaSoporte.aspx" />
+    <Content Include="Consultas\frmPerifericos.aspx" />
+    <Content Include="Consultas\FrmSoporte.aspx" />
+    <Content Include="Consultas\mensaje.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="denegado.aspx" />
+    <Content Include="Departamentos\Default.aspx" />
+    <Content Include="Departamentos\insert.aspx" />
+    <Content Include="Equipos\cdrom.aspx" />
+    <Content Include="Equipos\Default.aspx" />
+    <Content Include="Equipos\discoduro.aspx" />
+    <Content Include="Equipos\insert.aspx" />
+    <Content Include="Equipos\lan.aspx" />
+    <Content Include="Equipos\mensaje.aspx" />
+    <Content Include="Equipos\motherboard.aspx" />
+    <Content Include="Equipos\procesador.aspx" />
+    <Content Include="Equipos\ram.aspx" />
+    <Content Include="Equipos\sonido.aspx" />
+    <Content Include="Equipos\video.aspx" />
+    <Content Include="Estilos\soporte.css" />
+    <Content Include="Estilos\Skin Style.css" />
+    <Content Include="Estilos\style.css" />
+    <Content Include="Estilos\subModal.css" />
+    <Content Include="Imagenes\abierta.gif" />
+    <Content Include="Imagenes\AdobeReader.gif" />
+    <Content Include="Imagenes\ajax.gif" />
+    <Content Include="Imagenes\Alerta24x24.gif" />
+    <Content Include="Imagenes\ayuda.gif" />
+    <Content Include="Imagenes\back.gif" />
+    <Content Include="Imagenes\bannerbottom.gif" />
+    <Content Include="Imagenes\bannertitulo.gif" />
+    <Content Include="Imagenes\bottom.gif" />
+    <Content Include="Imagenes\BtmBarBg.gif" />
+    <Content Include="Imagenes\buscar.gif" />
+    <Content Include="Imagenes\calendario.gif" />
+    <Content Include="Imagenes\cancelar.gif" />
+    <Content Include="Imagenes\cdrom.gif" />
+    <Content Include="Imagenes\cerrada.gif" />
+    <Content Include="Imagenes\cerrarw.gif" />
+    <Content Include="Imagenes\close.gif" />
+    <Content Include="Imagenes\CntMnuAtoZ.gif" />
+    <Content Include="Imagenes\CntMnuBg.gif" />
+    <Content Include="Imagenes\CntMnuDelete.gif" />
+    <Content Include="Imagenes\CntMnuDetails.gif" />
+    <Content Include="Imagenes\CntMnuEdit.gif" />
+    <Content Include="Imagenes\CntMnuFilter.gif" />
+    <Content Include="Imagenes\CntMnuFilterDel.gif" />
+    <Content Include="Imagenes\CntMnuNew.gif" />
+    <Content Include="Imagenes\CntMnuZtoA.gif" />
+    <Content Include="Imagenes\codificadores.gif" />
+    <Content Include="Imagenes\departamentos.gif" />
+    <Content Include="Imagenes\discoduro.gif" />
+    <Content Include="Imagenes\doc.gif" />
+    <Content Include="Imagenes\dot1.gif" />
+    <Content Include="Imagenes\encabezado.gif" />
+    <Content Include="Imagenes\encabezadorpt.gif" />
+    <Content Include="Imagenes\equipobn.gif" />
+    <Content Include="Imagenes\equipos.gif" />
+    <Content Include="Imagenes\Floppy_disk.gif" />
+    <Content Include="Imagenes\form_edit.gif" />
+    <Content Include="Imagenes\form_go.gif" />
+    <Content Include="Imagenes\form_save.gif" />
+    <Content Include="Imagenes\form_search.png" />
+    <Content Include="Imagenes\Forward.gif" />
+    <Content Include="Imagenes\frmreporte3.gif" />
+    <Content Include="Imagenes\GetHTMLOver.gif" />
+    <Content Include="Imagenes\GetXLS.gif" />
+    <Content Include="Imagenes\GetXLSOver.gif" />
+    <Content Include="Imagenes\guardar.gif" />
+    <Content Include="Imagenes\HeaderBg.gif" />
+    <Content Include="Imagenes\HeaderBgOver.gif" />
+    <Content Include="Imagenes\helpbn.gif" />
+    <Content Include="Imagenes\helpbntdobs.gif" />
+    <Content Include="Imagenes\lan.gif" />
+    <Content Include="Imagenes\mantenimiento.gif" />
+    <Content Include="Imagenes\maskBG.png" />
+    <Content Include="Imagenes\minus.gif" />
+    <Content Include="Imagenes\motherboard.gif" />
+    <Content Include="Imagenes\nosign.gif" />
+    <Content Include="Imagenes\nosign2.gif" />
+    <Content Include="Imagenes\ok.gif" />
+    <Content Include="Imagenes\Oui.gif" />
+    <Content Include="Imagenes\PageFirst.gif" />
+    <Content Include="Imagenes\PageFirstDis.gif" />
+    <Content Include="Imagenes\PageFirstOver.gif" />
+    <Content Include="Imagenes\PageLast.gif" />
+    <Content Include="Imagenes\PageLastDis.gif" />
+    <Content Include="Imagenes\PageLastOver.gif" />
+    <Content Include="Imagenes\PageNextDis.gif" />
+    <Content Include="Imagenes\PageNextOver.gif" />
+    <Content Include="Imagenes\PagePrev.gif" />
+    <Content Include="Imagenes\PagePrevDis.gif" />
+    <Content Include="Imagenes\PagePrevOver.gif" />
+    <Content Include="Imagenes\piedepagina.gif" />
+    <Content Include="Imagenes\plus.gif" />
+    <Content Include="Imagenes\procesador.gif" />
+    <Content Include="Imagenes\Ram.gif" />
+    <Content Include="Imagenes\Refresh.gif" />
+    <Content Include="Imagenes\RefreshOver.gif" />
+    <Content Include="Imagenes\reportes.gif" />
+    <Content Include="Imagenes\respuesta.gif" />
+    <Content Include="Imagenes\RowFilterDis.gif" />
+    <Content Include="Imagenes\RowFilterOff.gif" />
+    <Content Include="Imagenes\RowFilterOffOver.gif" />
+    <Content Include="Imagenes\RowFilterOn.gif" />
+    <Content Include="Imagenes\RowFilterOnOver.gif" />
+    <Content Include="Imagenes\RowNew.gif" />
+    <Content Include="Imagenes\RowNewOver.gif" />
+    <Content Include="Imagenes\seleccionar.gif" />
+    <Content Include="Imagenes\SepBg.gif" />
+    <Content Include="Imagenes\session.gif" />
+    <Content Include="Imagenes\solicitud.gif" />
+    <Content Include="Imagenes\sonido.gif" />
+    <Content Include="Imagenes\SortAsc.gif" />
+    <Content Include="Imagenes\SortDesc.gif" />
+    <Content Include="Imagenes\tdformulario.gif" />
+    <Content Include="Imagenes\titulocart.png" />
+    <Content Include="Imagenes\top.gif" />
+    <Content Include="Imagenes\topwin.gif" />
+    <Content Include="Imagenes\ToTop.gif" />
+    <Content Include="Imagenes\ToTopOver.gif" />
+    <Content Include="Imagenes\treeview.gif" />
+    <Content Include="Imagenes\t_dot.gif" />
+    <Content Include="Imagenes\usuarios.gif" />
+    <Content Include="Imagenes\video.gif" />
+    <Content Include="JS\Cambio.js" />
+    <Content Include="JS\cdrom.js" />
+    <Content Include="JS\common.js" />
+    <Content Include="JS\common_eq.js" />
+    <Content Include="JS\common_Resp.js" />
+    <Content Include="JS\departamentos.js" />
+    <Content Include="JS\Desincorpora.js" />
+    <Content Include="JS\discoduro.js" />
+    <Content Include="JS\equipos.js" />
+    <Content Include="JS\bienvenida.js" />
+    <Content Include="JS\consultas.js" />
+    <Content Include="JS\htipo.js" />
+    <Content Include="JS\lan.js" />
+    <Content Include="JS\motherboard.js" />
+    <Content Include="JS\procesador.js" />
+    <Content Include="JS\ram.js" />
+    <Content Include="JS\sequipos.js" />
+    <Content Include="JS\sonido.js" />
+    <Content Include="JS\soporte.js" />
+    <Content Include="JS\subModal.js" />
+    <Content Include="JS\subModal_eq.js" />
+    <Content Include="JS\Submodal_Resp.js" />
+    <Content Include="JS\usuarios.js" />
+    <Content Include="JS\reportes.js" />
+    <Content Include="JS\respuesta.js" />
+    <Content Include="JS\VerUsuarios.js" />
+    <Content Include="JS\video.js" />
+    <Content Include="Menu\Menu.aspx" />
+    <Content Include="Reportes\calendario.aspx" />
+    <Content Include="Reportes\equipopdf.aspx" />
+    <Content Include="Reportes\frmReporte1.aspx" />
+    <Content Include="Reportes\frmReporte2.aspx" />
+    <Content Include="Reportes\frmReporte3.aspx" />
+    <Content Include="Reportes\frmreporte4.aspx" />
+    <Content Include="Reportes\frmReporte7.aspx" />
+    <Content Include="Reportes\impresorapdf.aspx" />
+    <Content Include="Reportes\monitorpdf.aspx" />
+    <Content Include="Reportes\mousepdf.aspx" />
+    <Content Include="Reportes\planillapdf.aspx" />
+    <Content Include="Reportes\reguladorpdf.aspx" />
+    <Content Include="Reportes\reporte1.aspx" />
+    <Content Include="Reportes\reporte2.aspx" />
+    <Content Include="Reportes\reporte3.aspx" />
+    <Content Include="Reportes\reporte4.aspx" />
+    <Content Include="Reportes\reporte5.aspx" />
+    <Content Include="Reportes\reporte6.aspx" />
+    <Content Include="Reportes\reporte7.aspx" />
+    <Content Include="Reportes\respuestapdf.aspx" />
+    <Content Include="Reportes\solicitudpdf.aspx" />
+    <Content Include="Reportes\switchepdf.aspx" />
+    <Content Include="Reportes\tecladopdf.aspx" />
+    <Content Include="Respuesta\Default.aspx" />
+    <Content Include="Respuesta\insert.aspx" />
+    <Content Include="Respuesta\Reasignar.aspx" />
+    <Content Include="Revision\Default.aspx" />
+    <Content Include="Revision\insert.aspx" />
+    <Content Include="salida.aspx" />
+    <Content Include="Solicitud\Default.aspx" />
+    <Content Include="Solicitud\insert.aspx" />
+    <Content Include="Solicitud\mensaje.aspx" />
+    <Content Include="Soporte\Default.aspx" />
+    <Content Include="Soporte\insert.aspx" />
+    <Content Include="Usuarios\Default.aspx" />
+    <Content Include="Usuarios\insert.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asignar\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asignar\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asignar\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asignar\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cartuchos\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cartuchos\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="conector\conector.cs" />
+    <Compile Include="conector\DDispositivo.cs" />
+    <Compile Include="conector\EditaEquipos.cs" />
+    <Compile Include="conector\EditaSoporte.cs" />
+    <Compile Include="conector\Global.cs" />
+    <Compile Include="conector\mensajes.cs" />
+    <Compile Include="conector\MiCalendario.cs" />
+    <Compile Include="conector\modal1.cs" />
+    <Compile Include="conector\reportes.cs" />
+    <Compile Include="conector\temporal.cs" />
+    <Compile Include="Consultas\Cambio.aspx.cs">
+      <DependentUpon>Cambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Cambio.aspx.designer.cs">
+      <DependentUpon>Cambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Desincorpora.aspx.cs">
+      <DependentUpon>Desincorpora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Desincorpora.aspx.designer.cs">
+      <DependentUpon>Desincorpora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\EnRevision.aspx.cs">
+      <DependentUpon>EnRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\EnRevision.aspx.designer.cs">
+      <DependentUpon>EnRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta1.aspx.cs">
+      <DependentUpon>frmconsulta1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta1.aspx.designer.cs">
+      <DependentUpon>frmconsulta1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta10.aspx.cs">
+      <DependentUpon>frmconsulta10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta10.aspx.designer.cs">
+      <DependentUpon>frmconsulta10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta11.aspx.cs">
+      <DependentUpon>frmconsulta11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta11.aspx.designer.cs">
+      <DependentUpon>frmconsulta11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta12.aspx.cs">
+      <DependentUpon>frmconsulta12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta12.aspx.designer.cs">
+      <DependentUpon>frmconsulta12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta13.aspx.cs">
+      <DependentUpon>frmconsulta13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta13.aspx.designer.cs">
+      <DependentUpon>frmconsulta13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta2.aspx.cs">
+      <DependentUpon>frmconsulta2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta2.aspx.designer.cs">
+      <DependentUpon>frmconsulta2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta3.aspx.cs">
+      <DependentUpon>frmconsulta3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta3.aspx.designer.cs">
+      <DependentUpon>frmconsulta3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta4.aspx.cs">
+      <DependentUpon>frmconsulta4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta4.aspx.designer.cs">
+      <DependentUpon>frmconsulta4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta5.aspx.cs">
+      <DependentUpon>frmconsulta5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta5.aspx.designer.cs">
+      <DependentUpon>frmconsulta5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta6.aspx.cs">
+      <DependentUpon>frmconsulta6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta6.aspx.designer.cs">
+      <DependentUpon>frmconsulta6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta7.aspx.cs">
+      <DependentUpon>frmconsulta7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta7.aspx.designer.cs">
+      <DependentUpon>frmconsulta7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta8.aspx.cs">
+      <DependentUpon>frmconsulta8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta8.aspx.designer.cs">
+      <DependentUpon>frmconsulta8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta9.aspx.cs">
+      <DependentUpon>frmconsulta9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmconsulta9.aspx.designer.cs">
+      <DependentUpon>frmconsulta9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmCPU.aspx.cs">
+      <DependentUpon>frmCPU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmCPU.aspx.designer.cs">
+      <DependentUpon>frmCPU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmEditaEquipos.aspx.cs">
+      <DependentUpon>frmEditaEquipos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmEditaEquipos.aspx.designer.cs">
+      <DependentUpon>frmEditaEquipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmEditaSoporte.aspx.cs">
+      <DependentUpon>frmEditaSoporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmEditaSoporte.aspx.designer.cs">
+      <DependentUpon>frmEditaSoporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmPerifericos.aspx.cs">
+      <DependentUpon>frmPerifericos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmPerifericos.aspx.designer.cs">
+      <DependentUpon>frmPerifericos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FrmSoporte.aspx.cs">
+      <DependentUpon>FrmSoporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\FrmSoporte.aspx.designer.cs">
+      <DependentUpon>FrmSoporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\mensaje.aspx.cs">
+      <DependentUpon>mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\mensaje.aspx.designer.cs">
+      <DependentUpon>mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denegado.aspx.cs">
+      <DependentUpon>denegado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denegado.aspx.designer.cs">
+      <DependentUpon>denegado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departamentos\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departamentos\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\cdrom.aspx.cs">
+      <DependentUpon>cdrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\cdrom.aspx.designer.cs">
+      <DependentUpon>cdrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\discoduro.aspx.cs">
+      <DependentUpon>discoduro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\discoduro.aspx.designer.cs">
+      <DependentUpon>discoduro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\lan.aspx.cs">
+      <DependentUpon>lan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\lan.aspx.designer.cs">
+      <DependentUpon>lan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\mensaje.aspx.cs">
+      <DependentUpon>mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\mensaje.aspx.designer.cs">
+      <DependentUpon>mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\motherboard.aspx.cs">
+      <DependentUpon>motherboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\motherboard.aspx.designer.cs">
+      <DependentUpon>motherboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\procesador.aspx.cs">
+      <DependentUpon>procesador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\procesador.aspx.designer.cs">
+      <DependentUpon>procesador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\ram.aspx.cs">
+      <DependentUpon>ram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\ram.aspx.designer.cs">
+      <DependentUpon>ram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\sonido.aspx.cs">
+      <DependentUpon>sonido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\sonido.aspx.designer.cs">
+      <DependentUpon>sonido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipos\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\calendario.aspx.cs">
+      <DependentUpon>calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\calendario.aspx.designer.cs">
+      <DependentUpon>calendario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\equipopdf.aspx.cs">
+      <DependentUpon>equipopdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\equipopdf.aspx.designer.cs">
+      <DependentUpon>equipopdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporte1.aspx.cs">
+      <DependentUpon>frmReporte1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporte1.aspx.designer.cs">
+      <DependentUpon>frmReporte1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporte2.aspx.cs">
+      <DependentUpon>frmReporte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporte2.aspx.designer.cs">
+      <DependentUpon>frmReporte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporte3.aspx.cs">
+      <DependentUpon>frmReporte3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporte3.aspx.designer.cs">
+      <DependentUpon>frmReporte3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmreporte4.aspx.cs">
+      <DependentUpon>frmreporte4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmreporte4.aspx.designer.cs">
+      <DependentUpon>frmreporte4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporte7.aspx.cs">
+      <DependentUpon>frmReporte7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporte7.aspx.designer.cs">
+      <DependentUpon>frmReporte7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\impresorapdf.aspx.cs">
+      <DependentUpon>impresorapdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\impresorapdf.aspx.designer.cs">
+      <DependentUpon>impresorapdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\monitorpdf.aspx.cs">
+      <DependentUpon>monitorpdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\monitorpdf.aspx.designer.cs">
+      <DependentUpon>monitorpdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\mousepdf.aspx.cs">
+      <DependentUpon>mousepdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\mousepdf.aspx.designer.cs">
+      <DependentUpon>mousepdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\planillapdf.aspx.cs">
+      <DependentUpon>planillapdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\planillapdf.aspx.designer.cs">
+      <DependentUpon>planillapdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reguladorpdf.aspx.cs">
+      <DependentUpon>reguladorpdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reguladorpdf.aspx.designer.cs">
+      <DependentUpon>reguladorpdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte1.aspx.cs">
+      <DependentUpon>reporte1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte1.aspx.designer.cs">
+      <DependentUpon>reporte1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte2.aspx.cs">
+      <DependentUpon>reporte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte2.aspx.designer.cs">
+      <DependentUpon>reporte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte3.aspx.cs">
+      <DependentUpon>reporte3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte3.aspx.designer.cs">
+      <DependentUpon>reporte3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte4.aspx.cs">
+      <DependentUpon>reporte4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte4.aspx.designer.cs">
+      <DependentUpon>reporte4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte5.aspx.cs">
+      <DependentUpon>reporte5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte5.aspx.designer.cs">
+      <DependentUpon>reporte5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte6.aspx.cs">
+      <DependentUpon>reporte6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte6.aspx.designer.cs">
+      <DependentUpon>reporte6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporte7.aspx.cs">
+      <DependentUpon>reporte7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporte7.aspx.designer.cs">
+      <DependentUpon>reporte7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\respuestapdf.aspx.cs">
+      <DependentUpon>respuestapdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\respuestapdf.aspx.designer.cs">
+      <DependentUpon>respuestapdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\solicitudpdf.aspx.cs">
+      <DependentUpon>solicitudpdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\solicitudpdf.aspx.designer.cs">
+      <DependentUpon>solicitudpdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\switchepdf.aspx.cs">
+      <DependentUpon>switchepdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\switchepdf.aspx.designer.cs">
+      <DependentUpon>switchepdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\tecladopdf.aspx.cs">
+      <DependentUpon>tecladopdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\tecladopdf.aspx.designer.cs">
+      <DependentUpon>tecladopdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Respuesta\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Respuesta\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Respuesta\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Respuesta\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Respuesta\Reasignar.aspx.cs">
+      <DependentUpon>Reasignar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Respuesta\Reasignar.aspx.designer.cs">
+      <DependentUpon>Reasignar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Revision\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Revision\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Revision\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Revision\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="salida.aspx.cs">
+      <DependentUpon>salida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salida.aspx.designer.cs">
+      <DependentUpon>salida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\mensaje.aspx.cs">
+      <DependentUpon>mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud\mensaje.aspx.designer.cs">
+      <DependentUpon>mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Soporte\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Soporte\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Soporte\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Soporte\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\insert.aspx.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios\insert.aspx.designer.cs">
+      <DependentUpon>insert.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.skin" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2177</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/soporte</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,413 @@
+input[disabled], input[readonly], select[disabled], select[readonly], radio[disabled], checkbox[disabled], checkbox[readonly], textarea[disabled], textarea[readonly]
+{
+ background-color: #E8F8FF;
+ border: #006699 1px solid;
+ color: #000000;
+ cursor: default;
+}
+.fecha
+{
+    font-family:Arial;
+    color:#0066CC;
+    font-size:small;
+    width:70px;
+}   
+.bodymenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#006699;
+	background-color:#E6F7FF;
+}
+.menu 
+{
+ 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#006699;
+	background-image:url(../Imagenes/tdformulario.gif);
+}
+.bodyformulario 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color:#BFD8EA;
+}
+
+.tableformulario 
+{
+    border:none;
+    border-bottom:none;
+    border-right:none;
+    border-top:none;
+    border-left:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.topbottom {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tdformulario 
+{
+    background-image:url(../Imagenes/tdformulario.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tdobservaciones 
+{
+    background-image:url(../Imagenes/tdobservaciones.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tdsistemas 
+{
+    background-image:url(../Imagenes/tdsistemas.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tddescfalla 
+{
+    background-image:url(../Imagenes/tddescfalla.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.thformulario {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.bodystyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+.titulo_form 
+{
+    background-image:url(../Imagenes/tituloform.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:800;
+    color:#C4E4EA;
+	font-size:14px;
+	border-bottom:single;
+	border-left:single;
+	border-right:single;
+	border-top:single;
+	background-color:#006699;
+	height:40px;	
+}
+.ayuda {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:#006699;
+	border-top:none;
+	border-right-color:#006699;
+	background-color:#C4E4EA;	
+}
+.medium {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.big {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.xbig {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+.expanded {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+.justified {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 9px;
+	color: #999999;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: medium;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+.box2 {
+	font-style: italic;
+	word-spacing: 2pt;
+	padding: 3px;
+	border: 1px solid;
+}
+#mensajesAyuda
+{
+	width:160px;
+	font-family:Verdana;
+	font-size:10px;
+	border:1px solid #000000;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	text-align:center;
+	background-color:#C4E4EA; 
+}
+#ayudaTitulo
+{
+	background-color:#006699; 
+	color:#C4E4EA; 
+	padding:1px;
+}
+#ayudaTexto
+{
+	vertical-align:middle;
+	padding:2px;
+}
+.textbox
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+}
+.codigo
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:100px;
+}
+.nombre
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:306px;
+}
+.responsable
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:306px;
+}
+.telefono
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:100px;
+}
+.descripcion
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;}
+.edad
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:20px;
+}
+.direccion
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+}
+.msgGuardado
+{
+    border-bottom:single;
+    border-top:single;
+    border-left:single;
+    border-right:single;
+	background-color:#C4E4EA;
+	vertical-align:middle;
+	text-align:center;
+	color:#006699;
+	font-family:Arial;
+	font-size:larger;
+}
+.observacioness
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:640px;
+    height:30px;
+}
+.observacionesh
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:640px;
+    height:30px;
+}
+.aplicaciones
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:640px;
+    height:30px;
+}
+.sistemas
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:640px;
+    height:30px;
+}
+.buttons2 {
+   	font:normal 10px verdana;
+	color: #000;	
+	padding: 4px 5px;	
+	text-decoration: none;
+	font-weight:bold;
+	cursor:pointer;	
+	letter-spacing: 0px;
+	border:1px solid #000;
+	border-top:3px solid #CCC;
+	border-left:3px solid #CCC;
+	border-right:3px solid #CCC;
+	border-bottom:3px solid #CCC;
+	background:#C4E4EA;
+}
+.buttons2:hover { background: #006699; color:#C4E4EA}
+.buttons2:disabled { background:#C4E4EA; color:#006699;}
+.bodybienvenida {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.tablebienvenida {
+    border:#0066CC;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.tdbienvenida {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#0066CC;
+	font-size:10px;
+	border-bottom:single;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.logginbienvenida
+{
+    font-family:Arial;
+    color:#0066CC;
+    font-size:small;
+    width:100px;
+}
+.passwordbienvenida
+{
+    font-family:Arial;
+    color:#0066CC;
+    font-size:small;
+    width:100px;
+}
+.soporte
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:100px;
+}
+.observaciones
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+}
+.falla
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+}
+.solucion
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+}
+.alerta 
+{
+    color:Red;
+    font-family:Arial;
+    font-size:12px;
+}
+.loggin
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:60px;
+}
+.password
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:60px;
+}
+.nombre
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:200px;
+}

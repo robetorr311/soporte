@@ -1,0 +1,438 @@
+/*
+CSS Style for APNSoft DataGrid
+Version APNSoft 2.12
+Created: 02/28/2007
+Updated: 26/01/2010
+Copyright 2003-2010 APNSoft. All rights reserved.
+http://www.apnsoft.com
+
+Free for commercial and non-commercial use.
+You can distribute and modify it freely.
+*/
+
+
+/*=====================Grid=======================*/
+
+/*Grid DIV*/
+.GridDIV
+{
+     border:solid 1px #808080;
+     background-color:#A6A6A6;
+     cursor:default;
+
+     /*
+     position:absolute;
+     left:100px;
+     top:100px;
+     */
+}
+
+
+/*==================Grid Header===================*/
+
+/*Header DIV*/
+.GridHeaderDIV
+{
+     background-color:#E1E1E1;
+     background-image:url(../Skins/APNSoft/HeaderBg.gif);
+     background-repeat:repeat-x;
+}
+
+/*Header Cell*/
+.GridHeaderTD
+{
+     font-family:Arial,Verdana;
+     font-size:12px;
+     text-align:left;
+     vertical-align:middle;
+     padding:0px;
+     padding-top:4px;
+     padding-bottom:3px;
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis;
+     border-bottom:solid 1px #808080;
+}
+
+
+/*Header Cell's internal DIV*/
+.GridHeaderTD DIV
+{
+     border-right:solid 1px #BFBFBF;
+     border-left:solid 1px #FFFFFF;
+     padding:0px;
+     padding-left:4px;
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis;
+     background-color:Transparent;
+}
+
+/*Header Cell (Hovered)*/
+.GridHeaderTDh
+{
+     font-family:Arial,Verdana;
+     font-size:12px;
+     text-align:left;
+     vertical-align:middle;
+     padding:0px;
+     padding-top:4px;
+     padding-bottom:3px;
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis;
+     background-color:#E9E9E9;
+     background-image:url(../Skins/APNSoft/HeaderBgOver.gif);
+     background-repeat:repeat-x;
+     border-bottom:solid 1px #000000;
+}
+
+/*Header Cell's internal DIV (Hovered)*/
+.GridHeaderTDh DIV
+{
+     border-right:solid 1px #C8C5B2;
+     border-left:solid 1px #FFFFFF;
+     padding:0px;
+     padding-left:4px;
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis;
+     background-color:Transparent;
+}
+
+
+/*==================Grid Columns==================*/
+
+/*Box for column is being resized*/
+.GridColumnResizedDIV
+{
+     padding:0px;
+     display:block;
+     background-color:#FFD79A;
+     border-right:solid 1px #FE9A00;
+     filter:alpha(opacity=50);/*Semi-Transparency for IE*/
+     -moz-opacity:0.5;/*Semi-Transparency for Mozilla*/
+     opacity:0.5;/*Semi-Transparency for Gecko*/
+}
+
+/*DIV for Fixed Columns*/
+.GridColumnFixedDIV
+{
+     border-right:solid 1px Gray;
+}
+
+
+/*================Grid Rows & Cells===============*/
+
+/*Rows DIV*/
+.GridRowsDIV
+{
+     scrollbar-base-color: #313421;
+     scrollbar-arrow-color: #FE9A00;
+     scrollbar-3dlight-color: #959595;
+     scrollbar-darkshadow-color: #959595;
+     scrollbar-face-color: #F1F1F1;
+     scrollbar-highlight-color: #FFFFFF;
+     scrollbar-shadow-color: #F1F1F1;
+     scrollbar-track-color: #959595;
+}
+
+/*Table for rows*/
+.GridRowsTABLE
+{
+     background-color:#FCFCFC;
+}
+
+/*Row Cell*/
+.GridRowsTABLE TD
+{
+     font-family:Arial,Verdana;
+     font-size:12px;
+     border:none;
+     padding: 3px 0px 3px 0px;
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis;
+     cursor:default;
+     background-image:url(../Skins/APNSoft/LineVert.gif);
+     background-repeat:repeat-y;
+}
+
+/*Row Cell's internal DIV*/
+.GridRowsTABLE TD DIV
+{
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis;
+     padding: 0px 4px 0px 4px;
+     /*cursor:default;*/
+}
+
+/*Even Rows*/
+.GridRowEvenTR
+{
+     background-color:#F1F1F1;
+}
+
+/*Row Cell (Selected Row)*/
+.GridRowSelectedTR TD
+{
+     background-color:#FE9A00;
+     color:black;
+     background-image:none;
+}
+
+
+
+
+/*Row Cell (Hovered Row)*/
+.GridRowHoveredTR TD
+{
+     background-color:#DFDFDF;
+     background-image:none;
+}
+
+/*Row Cell (Selected & Hovered Row)*/
+.GridRowSelectedHoveredTR TD
+{
+     background-color:#D98200;
+     background-image:none;
+}
+
+
+/*Input Box for editing cell's value*/
+.GridCellInputBox
+{
+     font-family:Tahoma;
+     font-size:11px;
+     font-weight:normal;
+     /*border:solid 1px Gray;*/
+     border:none;
+     background-color:white;
+     color:Black;
+}
+
+
+
+/*====================Grid Bar====================*/
+
+/*Bar DIV*/
+.GridBarDIV
+{
+     background-color:#D4D4D4;
+     padding:0px;
+     padding-top:4px;
+     padding-bottom:3px;
+     background-image:url(../Skins/APNSoft/BtmBarBg.gif);
+     background-repeat:repeat-x;
+}
+
+/*Bar Cell (All)*/
+.GridBarTABLE TD
+{
+     font-family:Arial,Verdana,Arial,Verdana;
+     font-size:12px;
+     font-weight:normal;
+     white-space:nowrap;
+     vertical-align:top;
+}
+
+/*Bar Cell (Button)*/
+.GridBarButtonTD
+{
+     padding:0px;
+     background-color:Transparent;
+     cursor:default;
+}
+
+/*Bar Cell (Hovered Button)*/
+.GridBarButtonHoveredTD
+{
+     padding:0px;
+     background-color:Transparent;
+     cursor:default;
+     cursor:hand;
+     cursor:pointer;
+}
+
+/*Bar Cell (Pages)*/
+.GridBarPagesTD
+{
+     font-size:12px;
+     padding-top:3px;
+     padding-left:10px;
+     padding-right:6px;
+     cursor:default;
+}
+
+/*Bar Cell (Rows)*/
+.GridBarRowsTD
+{
+     font-size:12px;
+     padding-top:3px;
+     padding-left:10px;
+     padding-right:6px;
+}
+
+/*Bar Cell (Status Bar)*/
+.GridBarStatusBarTD
+{
+     color:Gray;
+     font-size:10px;
+     padding-top:3px;
+     padding-left:6px;
+     padding-right:6px;
+     text-align:right;
+}
+
+/*Bar Cell (Separator)*/
+.GridBarSeparatorTD
+{
+     background-color:Transparent;
+     padding-left:7px;
+     background-image:url(../Skins/APNSoft/SepBg.gif);
+     background-repeat:repeat-x;
+}
+
+/*Bar Cell (Spacer)*/
+.GridBarSpacerTD
+{
+     cursor:default;
+}
+
+
+/*===================Edit Form====================*/
+
+/*Edit Form DIV*/
+.GridEditFormDIV
+{
+     padding:4px;
+     background-color:#F8F8F8;
+     border:solid 1px #808080;
+     filter:alpha(opacity=99);/*Semi-Transparency for IE*/
+     -moz-opacity:0.99;/*Semi-Transparency for Mozilla*/
+     opacity:0.99;/*Semi-Transparency for Gecko*/
+}
+
+
+/*==================Context Menu===================*/
+
+/*Context Menu DIV*/
+.GridContextMenuDIV
+{
+     background-color:#F9F8F7;
+     border:solid 1px #666666;
+     padding:2px;
+     background-image:url(../Skins/APNSoft/CntMnuBg.gif);
+     background-repeat:repeat-y;
+}
+
+/*Context Menu Item*/
+.GridContextMenuItemTD
+{
+     font-family:Tahoma;
+     font-size:11px;
+     padding:3px;
+     background-color:transparent;
+     cursor:default;
+     cursor:hand;
+     cursor:pointer;
+     white-space:nowrap;
+}
+
+/*Context Menu Item (Hovered)*/
+.GridContextMenuItemHoveredTD
+{
+     font-family:Tahoma;
+     font-size:11px;
+     padding:2px;
+     background-color:#FFF3E1;
+     border:solid 1px #FF9D01;
+     cursor:default;
+     cursor:hand;
+     cursor:pointer;
+     white-space:nowrap;
+}
+
+/*Context Menu Separator*/
+.GridContextMenuSeparatorTD
+{
+     padding:0px;
+     background-image:url(../Skins/APNSoft/CntMnuSep.gif);
+     cursor:default;
+     height:1px;
+     display:block;
+}
+
+/*Custom class (Red) for special rows*/
+.SpecialRowRed
+{
+     font-weight:normal;
+     color:#BB0000;
+     background-color:#FFCECE;
+}
+
+/*Custom class (Green) for special rows*/
+.SpecialRowGreen
+{
+     font-weight:normal;
+     color:#105E00;
+     background-color:#ACFF9B;
+}
+
+/*Custom class (Blue) for special rows*/
+.SpecialRowBlue
+{
+     font-weight:normal;
+     color:#00075E;
+     background-color:#D5D8FF;
+}
+
+
+/*===================Custom classes====================*/
+
+/*Custom class for line numbers*/
+.LineNumbers
+{
+     font-weight:bold;
+     color:#FE9A00;
+     background-color:#FFFFFF;
+     text-align:right;
+}
+
+/*Custom class for the 'CustomerID' column*/
+.CustomerID
+{
+     color:Gray;
+     background-color:#eaeaea;
+}
+
+/*Custom class for the 'CompanyName' column*/
+.CompanyName
+{
+     color:#7D0000;
+     background-color:#FFF2F2;
+}
+
+/*Custom class for the 'ContactName' column*/
+.ContactName
+{
+     color:#4D4B0F;
+     background-color:#F8F7DC;
+}
+
+/*Custom class for the 'Address' column*/
+.Address
+{
+     color:#008000;
+     background-color:#F4FFF4;
+}
+
+/*Custom class for the 'PostalCode' column*/
+.PostalCode
+{
+     color:Navy;
+     background-color:#EDF0FC;
+}
+
+

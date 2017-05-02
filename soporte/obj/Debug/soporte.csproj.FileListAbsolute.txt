@@ -1,0 +1,12 @@
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2008\Projects\soporte\soporte\bin\soporte.dll
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2008\Projects\soporte\soporte\bin\soporte.pdb
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2008\Projects\soporte\soporte\bin\sharpPDF.dll
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2008\Projects\soporte\soporte\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2008\Projects\soporte\soporte\obj\Debug\soporte.dll
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2008\Projects\soporte\soporte\obj\Debug\soporte.pdb
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2010\Projects\soporte\soporte\bin\soporte.dll
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2010\Projects\soporte\soporte\bin\soporte.pdb
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2010\Projects\soporte\soporte\bin\sharpPDF.dll
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2010\Projects\soporte\soporte\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2010\Projects\soporte\soporte\obj\Debug\soporte.dll
+C:\Documents and Settings\Robert\Mis documentos\Visual Studio 2010\Projects\soporte\soporte\obj\Debug\soporte.pdb

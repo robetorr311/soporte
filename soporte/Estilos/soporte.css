@@ -1,0 +1,574 @@
+input[disabled], input[readonly], select[disabled], select[readonly], radio[disabled], checkbox[disabled], checkbox[readonly], textarea[disabled], textarea[readonly]
+{
+ background-color: #E8F8FF;
+ border: #006699 1px solid;
+ color: #000000;
+ cursor: default;
+}
+.fecha
+{
+    font-family:Arial;
+    color:#0066CC;
+    font-size:small;
+    width:70px;
+}   
+.bodymenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#006699;
+	background-color:#E6F7FF;
+}
+.menu 
+{
+ 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#006699;
+	background-image:url(../Imagenes/tdformulario.gif);
+}
+.bodyformulario 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color:#BFD8EA;
+}
+
+.tableformulario 
+{
+    border:none;
+    border-bottom:none;
+    border-right:none;
+    border-top:none;
+    border-left:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.topbottom {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tdmenu 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tdbotones 
+{
+    background-image:url(../Imagenes/tdbotones.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.tdTITformulario 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	height:24px;
+	font-size:14px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#E8F8FF;	
+	height:20px;	
+}
+.tdformulario 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	height:24px;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#E8F8FF;	
+	height:20px;	
+}
+.tdfecharep 
+{
+    background-image:url(../Imagenes/tdfecharep.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#E8F8FF;
+	height:30px;	
+}
+.tdobservaciones 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#E8F8FF;
+	height:40px;	
+}
+.tdsistemas 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#E8F8FF;	
+}
+.tddescfalla 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#E8F8FF;	
+}
+.thformulario {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.bodystyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+.titulo_form 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight:800;
+    color:#C4E4EA;
+	font-size:14px;
+	border-bottom:single;
+	border-left:single;
+	border-right:single;
+	border-top:single;
+	background-color:#006699;
+	height:30px;	
+}
+.ayuda {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:#006699;
+	border-top:none;
+	border-right-color:#006699;
+	background-color:#C4E4EA;	
+}
+.medium {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.big {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.xbig {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+.expanded {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2px;
+}
+.justified {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 9px;
+	color: #999999;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: medium;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+.box2 {
+	font-style: italic;
+	word-spacing: 2pt;
+	padding: 3px;
+	border: 1px solid;
+}
+#mensajesAyuda
+{
+	width:160px;
+	font-family:Verdana;
+	font-size:10px;
+	border:1px solid #000000;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	text-align:center;
+	background-color:#C4E4EA; 
+}
+#ayudaTitulo
+{
+	background-color:#006699; 
+	color:#C4E4EA; 
+	padding:1px;
+}
+#ayudaTexto
+{
+	vertical-align:middle;
+	padding:2px;
+}
+.select
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    height:18px;
+}
+.selectgrid
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    height:18px;
+    width:70px;
+}
+.textboxgrid
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    height:15px;
+    width:70px;
+}
+.textbox
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    height:15px;
+    text-transform: uppercase;
+}
+.codigo
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:100px;
+    height:15px;
+    text-transform: uppercase;
+}
+.nombre
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:306px;
+    height:15px;
+    text-transform: uppercase;
+}
+.responsable
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:306px;
+    height:15px;
+    text-transform: uppercase;
+}
+.telefono
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:100px;
+    height:15px;
+    text-transform: uppercase;
+}
+.descripcion
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+    text-transform: uppercase;
+}
+.edad
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:20px;
+    height:15px;
+    text-transform: uppercase;
+}
+.direccion
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+    text-transform: uppercase;
+}
+.msgGuardado
+{
+    border-bottom:single;
+    border-top:single;
+    border-left:single;
+    border-right:single;
+	background-color:#C4E4EA;
+	vertical-align:middle;
+	text-align:center;
+	color:#006699;
+	font-family:Arial;
+	font-size:larger;
+}
+.observacioness
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:350px;
+    height:30px;
+    text-transform: uppercase;
+}
+.observacionesh
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:350px;
+    height:30px;
+    text-transform: uppercase;
+}
+.aplicaciones
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:350px;
+    height:30px;
+    text-transform: uppercase;
+}
+.sistemas
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:350px;
+    height:30px;
+    text-transform: uppercase;
+}
+.buttons2 {
+   	font:normal 10px Arial;
+	color: #000000;	
+	padding: 4px 5px;	
+	text-decoration: none;
+	font-weight: bolder /*bold*/;
+	cursor:pointer;	
+	letter-spacing: 0px;
+	border:1px solid #000000;
+	border-top:3px solid #0D6E9F;
+	border-left:3px solid #0D6E9F;
+	border-right:3px solid #0D6E9F;
+	border-bottom:3px solid #0D6E9F;
+	background:#C4E4EA;
+}
+.buttons2:hover  
+{
+	color: #ffffff;	
+    background: #0D6E9F; 
+    color:#C4E4EA;
+	border:1px solid #ffffff;
+	border-top:3px solid #C4E4EA;
+	border-left:3px solid #C4E4EA;
+	border-right:3px solid #C4E4EA;
+	border-bottom:3px solid #C4E4EA;
+	}
+.buttons2:disabled { background:#C4E4EA; color:#006699;}
+.bodybienvenida {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.tablebienvenida {
+    border:#0066CC;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.tdbienvenida {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#0066CC;
+	font-size:10px;
+	border-bottom:single;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#C4E4EA;	
+}
+.logginbienvenida
+{
+    font-family:Arial;
+    color:#0066CC;
+    font-size:small;
+    width:100px;
+    height:15px;
+}
+.passwordbienvenida
+{
+    font-family:Arial;
+    color:#0066CC;
+    font-size:small;
+    width:100px;
+    height:15px;
+}
+.soporte
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:100px;
+    height:15px;
+    text-transform: uppercase;
+}
+.observaciones
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+    text-transform: uppercase;
+}
+.falla
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+    text-transform: uppercase;
+}
+.solucion
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+    text-transform: uppercase;
+}
+.alerta 
+{
+    color:Red;
+    font-family:Arial;
+    font-size:12px;
+}
+.loggin
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:60px;
+}
+.password
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:60px;
+}
+.nombre
+{
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:200px;
+    height:15px;
+    text-transform: uppercase;
+}
+.campoerror
+{
+    font-family:Arial;
+    color:#006699;
+    background-color:#ffeaea;
+    border-color:#ff0000;
+    font-size:small;
+    height:15px;
+}
+.selecterror
+{
+    font-family:Arial;
+    color:#006699;
+    background-color:#ffeaea;
+    border-color:#ff0000;
+    font-size:small;
+    height:18px;
+}
+.buttonserror {
+   	font:normal 10px Arial;
+	color: #ff0000;	
+	padding: 4px 5px;	
+	text-decoration: none;
+	font-weight: bolder /*bold*/;
+	cursor:pointer;	
+	letter-spacing: 0px;
+	border:1px solid #000000;
+	border-top:3px solid #0D6E9F;
+	border-left:3px solid #0D6E9F;
+	border-right:3px solid #0D6E9F;
+	border-bottom:3px solid #0D6E9F;
+	background:#ffcece;
+}
+.buttonserror:hover  
+{
+	color: #ff0000;	
+    background: #ffcece; 
+	border:1px solid #ffffff;
+	border-top:3px solid #ff0000;
+	border-left:3px solid #ff0000;
+	border-right:3px solid #ff0000;
+	border-bottom:3px solid #ff0000;
+	}
+.buttonserror:disabled { background:#ff0000; color:#ffcece;}
+.observacioneserror
+{
+    background-color:#ffcece;  
+    font-family:Arial;
+    color:#006699;
+    font-size:small;
+    width:340px;
+    height:30px;
+}
